@@ -1,0 +1,259 @@
+/*--------------------general rules-------------------------------*/
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.website {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/*------------------------header-------------------------------------*/
+
+.header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  }
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo img {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    height: 1.5rem;
+}
+
+.header span {
+}
+
+/*-------------------------------new arrival------------------------------*/
+
+.new-arrival {
+  height: 25rem;
+    background-image: url(../images/moto.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-box {
+      margin-top: 9rem;
+      font-weight: bold;
+      padding: 2rem 4rem 3rem 3rem;
+      background-color: black;
+      max-width: 20rem;
+      margin-top: 9rem;
+      color: white;
+}
+
+.text-box h1 {
+      margin-top: 0.25rem;
+      font-size: 2rem;
+}
+
+/*------------------------------------menu-----------------------------------*/
+
+.menu {
+      background-color: firebrick;
+      width: 100%;
+      padding: 0.75rem 0 0.75rem 0;
+      color: white;
+      }
+
+.menu div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-small {
+  text-align: center;
+  background-color: firebrick;
+  width: 100%;
+  padding: 0.75rem 0 0.75rem 0;
+  color: white;
+}
+
+/*------------------------------------products--------------------------------*/
+
+
+
+.products-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto 3rem auto;
+  }
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 16rem;
+    border: 4px solid black;
+    overflow: hidden;
+    align-content: space-between;
+    justify-content: space-between;
+    }
+
+.product img {
+    height: 9rem;
+    max-width: 8em;
+    margin: auto;
+    padding: 2rem 0 2rem 0;
+}
+
+#glasses img {
+      height: 4rem;
+      width: auto;
+}
+
+.title {
+  display: flex;
+  height: 15%;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 0.5rem auto 0.5rem auto;
+}
+
+/*--------------------------footer---------------------------------*/
+
+.info {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.info div {
+    justify-content: space-between;
+}
+
+.info-box {
+    width: 35%;
+    display: flex;
+    flex-direction: column
+
+}
+
+.infos {
+    background-color: black;
+    color: white;
+    padding: 1rem 0 1rem 2rem;
+    margin-bottom: 0.25rem;
+}
+
+/*------------------------------------copyright------------------------------*/
+
+.copyright {
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  }
+
+  .copyright div {
+    height: 5rem;
+    align-items: center;
+  }
+
+/*-----------------------------------media-queries---------------------------*/
+
+@media only screen and (min-width: 1025px) {
+  .menu-small {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #watch {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product {
+    width: 90%;
+    }
+
+  #glasses {
+    display: none;
+  }
+
+  #products-small {
+    justify-content: center;
+  }
+
+  #copyright {
+    justify-content: center;
+  }
+
+  #info-small {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info-box {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  #new-arrival-small {
+    height: 15rem;
+    width: 100%;
+  }
+
+#text-box-small {
+  margin: 10rem 0;
+  padding: 1rem;
+  height: 4rem;
+  width: 100%;
+
+}
+
+  #text-box-small h1 {
+    font-size: 1rem;
+  }
+
+  #text-box-small h3 {
+    font-size: 0.77rem;
+  }
+
+
+/*text-box {
+        margin-top: 9rem;
+        font-weight: bold;
+        padding: 2rem 4rem 3rem 3rem;
+        background-color: black;
+        max-width: 20rem;
+        margin-top: 9rem;
+        color: white;
+  }
+
+  .text-box h1 {
+        margin-top: 0.25rem;
+        font-size: 2rem;
+  }
+*/
+}
